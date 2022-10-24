@@ -275,6 +275,7 @@ section.ordering .ordering_text .ordering_span {
 }
 .ordering_content .order_items .items .items_span {
   margin-top: 20px;
+  max-width: 130px;
 }
 
 .animate, .animate2, .animate3, .animate4 {
@@ -287,22 +288,22 @@ section.ordering .ordering_text .ordering_span {
 }
 
 .animate {
-  top: -89%;
+  top: -72%;
   left: 14%;
 }
 
 .animate2 {
-  top: -89%;
+  top: -72%;
   left: 34%;
 }
 
 .animate3 {
-  top: -89%;
+  top: -72%;
   left: 54%;
 }
 
 .animate4 {
-  top: -89%;
+  top: -72%;
   left: 74%;
 }
 

@@ -263,6 +263,7 @@ section.ordering{
             flex-direction: column;
             align-items: center;
             margin: 0 20px;
+            // margin: 0 20px 20px 0;
             @media screen and (max-width:380px) {
                 margin: 20px 20px;
             }
@@ -296,6 +297,7 @@ section.ordering{
             }
             .items_span{
                 margin-top: 20px;
+                max-width: 130px;
             }
         }
     }
@@ -308,19 +310,19 @@ section.ordering{
     }
 }
 .animate{
-    top: -89%;
+    top: -72%;
     left: 14%;
 }
 .animate2{
-    top: -89%;
+    top: -72%;
     left: 34%;
 }
 .animate3{
-    top: -89%;
+    top: -72%;
     left: 54%;
 }
 .animate4{
-    top: -89%;
+    top: -72%;
     left: 74%;
 }
 h1.jump {
@@ -481,7 +483,18 @@ footer{
     width: 100%;
     padding: 32px 0;
     .wrapp_footer{
-   
+        .left_footer{
+
+        }
+
+        .center_footer{
+
+        }
+
+        .right_footer{
+
+        }
+
     }
     a,p{
         text-decoration: none;

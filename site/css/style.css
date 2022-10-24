@@ -80,7 +80,7 @@ header .header_menu .main_menu {
 }
 
 .wrapp_header_recl {
-  background-image: url(../img/stranichka_MDM_1_.jpg);
+  background-image: url(../img/section_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -164,37 +164,36 @@ header .header_menu .main_menu {
     margin-top: 16px;
   }
 }
-@media screen and (max-width: 640px) {
-  .wrapp_header_recl {
-    background-image: url(../img/stranichka_MDM_1_640.jpg);
-    background-position: center center;
-  }
-}
 @media screen and (max-width: 420px) {
   .wrapp_header_recl {
-    background-image: url(../img/stranichka_MDM_1_320.jpg);
+    background-image: url(../img/section1_320.png);
     background-position: center;
   }
 }
 
 .bg_section_ordering {
-  background-image: url(../img/space.jpg);
+  background-image: url(../img/section2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-@media screen and (max-width: 640px) {
-  .bg_section_ordering {
-    background-position: center center;
-    background-image: url(../img/space640.jpg);
-  }
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 320px) {
   .bg_section_ordering {
-    background-image: url(../img/space320.jpg);
+    background-image: url(../img/section2_320.png);
     background-position: right;
     background-position: center;
   }
+}
+.bg_section_ordering::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #272733;
+  z-index: -1;
+  top: -1px;
+  position: absolute;
 }
 
 section.ordering {
@@ -283,7 +282,7 @@ section.ordering .ordering_text .ordering_span {
 .animate, .animate2, .animate3, .animate4 {
   position: absolute;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1040px) {
   .animate, .animate2, .animate3, .animate4 {
     display: none;
   }
@@ -528,26 +527,6 @@ footer {
   width: 100%;
   padding: 32px 0;
 }
-footer .wrapp_footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-footer .wrapp_footer > div {
-  display: flex;
-  align-items: center;
-  padding-left: 23px;
-  flex-wrap: wrap;
-  width: 300px;
-  justify-content: center;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-@media screen and (max-width: 380px) {
-  footer .wrapp_footer > div {
-    padding-left: 0;
-  }
-}
 footer a, footer p {
   text-decoration: none;
   color: #FFFFFF;
@@ -559,12 +538,7 @@ footer a, footer p {
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-}
-footer .href_footer:hover div p {
-  color: #5aa9e0;
-}
-footer .href_footer:hover a {
-  color: #5aa9e0;
+  text-align: center;
 }
 @media screen and (max-width: 340px) {
   footer .content {

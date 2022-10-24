@@ -255,8 +255,6 @@ section.ordering .ordering_text .ordering_span {
   position: relative;
 }
 .ordering_content .order_items .items div img {
-  width: 20px;
-  height: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
